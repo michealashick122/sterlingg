@@ -1,0 +1,74 @@
+<div class="navbar">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/staff-student">Staff/Student Page</a>
+    <a routerLink="/about-department">About their Department</a>
+    <a routerLink="/department-toppers">Department Toppers</a>
+    <a routerLink="/logout">Logout</a>
+</div>
+
+<div class="container">
+    <h2>Registration Page</h2>
+    <form (ngSubmit)="onSubmit()" #registForm="ngForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="father-name">Father Name:</label>
+            <input type="text" id="father-name" name="father-name" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="mother-name">Mother Name:</label>
+            <input type="text" id="mother-name" name="mother-name" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="tenth-mark">10th Total Mark:</label>
+            <input type="number" id="tenth-mark" name="tenth-mark" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="twelfth-mark">12th Total Mark:</label>
+            <input type="number" id="twelfth-mark" name="twelfth-mark" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="physics-mark">Physics Mark:</label>
+            <input type="number" id="physics-mark" name="physics-mark" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="chemistry-mark">Chemistry Mark:</label>
+            <input type="number" id="chemistry-mark" name="chemistry-mark" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="maths-mark">Maths Mark:</label>
+            <input type="number" id="maths-mark" name="maths-mark" ngModel>
+            <button type="button">Upload</button>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+<div class="footer">
+    <p>APPROVED & AFFILIATED BY</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>Copyright (C) ACET</p>
+</div>
